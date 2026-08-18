@@ -1,2 +1,1 @@
-# jgo_da_forca
-# jgo_da_forca
+jogo da forca desenvolvido em java, após ver as aulas de java do curso javanauta esse é meu primeiro projeto.
