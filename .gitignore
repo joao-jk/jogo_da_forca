@@ -3,6 +3,10 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
+.idea/
+*.iml
+.out/
+target/
 
 ### Eclipse ###
 .apt_generated
