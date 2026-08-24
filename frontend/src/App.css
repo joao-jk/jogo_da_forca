@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  color: #f0f0f0;
+  min-height: 100vh;
+}
+.app { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+.hero { text-align: center; margin-bottom: 2rem; }
+.hero h1 {
+  font-family: 'Cinzel Decorative', serif; font-size: 3rem; letter-spacing: 2px;
+  background: linear-gradient(90deg, #e94560, #ff6b6b, #ffd93d); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 6px rgba(233,69,96,0.35));
+}
+.subtitle { color: #ccc; font-weight: 300; font-size: 1.1rem; margin-top: .25rem; }
+.card {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px; padding: 2rem; backdrop-filter: blur(12px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.status-row { display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 999px; padding: .35rem .9rem; font-size: .85rem; font-weight: 600; }
+.word-display { display: flex; gap: .5rem; justify-content: center; font-size: 2.5rem; font-weight: 700; letter-spacing: 4px; margin: 1.5rem 0; }
+.letter { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 3.2rem; border-bottom: 4px solid #e94560; border-radius: 6px; background: rgba(255,255,255,0.06); transition: .2s; }
+.letter.filled { background: linear-gradient(135deg, #ffd93d, #ff6b6b); color: #1a1a2e; border-bottom-color: #ffd93d; }
+.hint { text-align: center; color: #aaa; margin-bottom: 1rem; font-style: italic; }
+.msg { text-align: center; color: #ffd93d; font-weight: 600; min-height: 1.5rem; margin-bottom: .5rem; }
+.keyboard { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: .5rem; margin-top: 1.5rem; }
+.keyboard button {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: #fff; border-radius: 10px; padding: .55rem; font-weight: 600; cursor: pointer; transition: .15s;
+}
+.keyboard button:hover:not(:disabled) { background: rgba(233,69,96,0.25); border-color: #e94560; }
+.keyboard button:disabled { opacity: .25; cursor: default; }
+.keyboard button.pressed { background: rgba(233,69,96,0.35); border-color: #e94560; }
+.overlay { position: absolute; inset: 0; z-index: 10; background: rgba(10,10,20,0.92); border-radius: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; animation: pop .35s ease; }
+@keyframes pop { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: scale(1); } }
+.overlay h2 { font-family: 'Cinzel Decorative', serif; font-size: 2rem; }
+.overlay p { color: #ccc; font-size: 1.1rem; }
+.overlay button { background: linear-gradient(135deg, #e94560, #ff6b6b); border: none; border-radius: 999px; padding: .7rem 1.5rem; color: #fff; font-weight: 700; cursor: pointer; box-shadow: 0 10px 25px rgba(233,69,96,0.3); transition: .15s; }
+.overlay button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(233,69,96,0.45); }
+@media (max-width: 520px) { .word-display { font-size: 1.8rem; gap: .35rem; } .letter { width: 1.5rem; height: 2.6rem; } .hero h1 { font-size: 2.2rem; } }
