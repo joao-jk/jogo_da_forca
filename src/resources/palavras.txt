@@ -1,0 +1,27 @@
+JAVA;Linguagem de programação orientada a objetos
+PYTHON;Linguagem de programação conhecida por sua sintaxe limpa
+GIT;Sistema de controle de versão distribuído
+LINUX;Sistema operacional de código aberto
+REACT;Biblioteca JavaScript para construir interfaces
+INTELLIJ;IDE popular entre desenvolvedores Java
+HTML;Linguagem de marcação para a web
+CSS;Linguagem de estilo para páginas web
+JAVASCRIPT;Linguagem de programação da web
+ALGORITMO;Sequência de passos para resolver um problema
+COMPILADOR;Programa que traduz código fonte para código de máquina
+DEPURACAO;Processo de encontrar e corrigir erros no código
+FRAMEWORK;Estrutura base para desenvolvimento de software
+BANCODEADOS;Sistema para armazenar e gerenciar informações
+SERVIDOR;Computador que fornece serviços a outros computadores
+BACKEND;Parte de uma aplicação que roda no servidor
+FRONTEND;Parte de uma aplicação que roda no navegador
+API;Conjunto de regras para comunicação entre softwares
+DEPLOY;Processo de disponibilizar uma aplicação em produção
+TESTE;Verificação automática do funcionamento do código
+AGIL;Metodologia de desenvolvimento iterativa e incremental
+SCRUM;Framework ágil para gestão de projetos
+DEVOPS;Práticas que unem desenvolvimento e operações
+NUVEM;Serviços de computação acessados pela internet
+DOCKER;Ferramenta para empacotar aplicações em containers
+TERMINAL;Interface de linha de comando do sistema operacional
+GITHUB;Plataforma de hospedagem de código com Git
